@@ -18,8 +18,6 @@ time.sleep(2)
 print("Pick anyone that you are comfortable with.")
 print("\n")
 print("------------------------------------------------------")
-# Eazy Level - Order not randomised:
-# e.g. 4 letter, 2 symbol, 2 number = JduE&!91
 final_password = []
 for letter in range(nr_letters):
     final_password.append(random.choice(letters))
@@ -39,8 +37,6 @@ sorted_final_password_str = ''.join(sort_final_password_str)
 time.sleep(1)
 print("Here is your sorted generate password:", sorted_final_password_str)
 print("\n")
-# Hard Level - Order of characters randomised:
-# e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
 random_final_password = random.sample(final_password, len(final_password_str))
 random_final_password_str = ''.join(random_final_password)
 time.sleep(1)
